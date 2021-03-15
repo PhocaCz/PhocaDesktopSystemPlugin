@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="system" method="upgrade" version="4.0">
+	<name>plg_system_phocadesktop</name>
+	<author>Jan Pavelka (www.phoca.cz)</author>
+	<creationDate>15/03/2021</creationDate>
+	<authorEmail></authorEmail>
+	<authorUrl>https://www.phoca.cz</authorUrl>
+	<copyright>Jan Pavelka</copyright>
+	<license>GNU/GPL</license>
+	<version>4.0.0</version>
+	<description>PLG_SYSTEM_PHOCADESKTOP_DESCRIPTION</description>
+	<projectName>PhocaDesktopSystemPlugin</projectName>
+
+	<media destination="plg_system_phocadesktop" folder="media">
+		<folder>css</folder>
+		<folder>js</folder>
+		<filename>index.html</filename>
+	</media>
+
+	<files>
+		<folder>demo</folder>
+		<filename plugin="phocadesktop">index.html</filename>
+		<filename plugin="phocadesktop">manifest.xml</filename>
+		<filename plugin="phocadesktop">phocadesktop.php</filename>
+	</files>
+
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.plg_system_phocadesktop.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.plg_system_phocadesktop.sys.ini</language>
+	</languages>
+
+	<administration>
+		<languages>
+			<language tag="en-GB">language/en-GB/en-GB.plg_system_phocadesktop.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.plg_system_phocadesktop.sys.ini</language>
+		</languages>
+	</administration>
+	
+	<config>
+        <fields name="params">
+            <fieldset name="basic">
+
+                <field name="shortcuts" default="" size="" type="textarea" label="PLG_SYSTEM_PHOCADESKTOP_SHORTCUTS_LABEL" description="PLG_SYSTEM_PHOCADESKTOP_SHORTCUTS_DESC" filter="raw"/>
+
+                <field name="background_image" type="media" default="" directoryimg="1" label="PLG_SYSTEM_PHOCADESKTOP_BACKGROUND_IMAGE_LABEL" description="PLG_SYSTEM_PHOCADESKTOP_BACKGROUND_IMAGE_DESC"/>
+
+            </fieldset>
+        </fields>
+    </config>
+
+	<updateservers>
+		<server type="extension" name="PLG_SYSTEM_PHOCADESKTOP" priority="1"><![CDATA[https://raw.githubusercontent.com/PhocaCz/PhocaDesktopSystemPlugin/master/manifest.xml]]></server>
+	</updateservers>
+</extension>

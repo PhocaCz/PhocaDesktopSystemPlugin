@@ -1,0 +1,71 @@
+#ph-desktop {
+
+    margin: -1em -1em 1em -1em;
+    padding: 2em;
+    
+    display:flex;
+    flex-wrap: wrap;
+   
+}
+
+#ph-desktop .ph-shortcut-box {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 6em;
+ 
+    margin: 0.75em;
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+    border-radius: 3px;
+    position: relative;
+    
+}
+
+#ph-desktop .ph-shortcut-icon {
+    font-size: 3em;
+    margin-bottom: 0;
+}
+
+#ph-desktop .ph-shortcut-icon-svg {
+    margin-bottom: 0;
+    padding: 0.75em;
+}
+
+#ph-desktop .ph-shortcut-icon-svg svg {
+    width: 48px;
+    height: 48px;
+}
+
+#ph-desktop .ph-shortcut-title {
+    font-size: 0.75em;
+    color: #fff;
+    text-shadow: 1px 1px #000;
+    margin-top: -0.5em;
+    margin-bottom: 1em;
+}
+
+#ph-desktop a {
+    text-decoration: none;
+}
+
+#ph-desktop .ph-shortcut-icon-pref {
+    position:absolute;
+    top: 0.3em;
+    right: 0.3em;
+}
+
+#ph-desktop .ph-shortcut-icon-pref span {
+    color: #F08700;
+    font-size: 1.5em;
+    background: #fff;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+main #system-message-container:not(:empty) {
+    padding-bottom: 1em;
+}
+

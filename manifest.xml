@@ -1,0 +1,22 @@
+<updates>
+	<update>
+		<name><![CDATA[ Phoca Desktop System Plugin ]]></name>
+		<description><![CDATA[ Phoca Desktop System plugin adds a desktop with shortcuts to the main Joomla! administration panel ]]></description>
+		<element>phocadesktop</element>
+		<folder>system</folder>
+		<type>plugin</type>
+		<version>4.0.0</version>
+		<infourl title="Phoca Desktop System Plugin 4.0.0">https://www.phoca.cz/</infourl>
+		<downloads>
+			<downloadurl type="full" format="zip">https://github.com/PhocaCz/PhocaDesktopSystemPlugin/releases/download/4.0.0/plg_system_phocadesktop_v4.0.0.zip</downloadurl>
+		</downloads>
+		<tags>
+			<tag>stable</tag>
+		</tags>
+		<maintainer><![CDATA[ Phoca.cz ]]></maintainer>
+		<maintainerurl>https://www.phoca.cz/</maintainerurl>
+		<section>Updates</section>
+		<targetplatform name="joomla" version="4.0"/>
+		<client>site</client>
+	</update>
+</updates>

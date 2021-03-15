@@ -1,0 +1,16 @@
+{
+	"author": "Jan Pavelka (www.phoca.cz)",
+	"authorUrl": "https://www.phoca.cz",
+	"copyright": "Jan Pavelka",
+	"license": "GNU/GPL",
+	"projectName": "PhocaDesktopSystemPlugin",
+	"extensionName": "Phoca Desktop System Plugin",
+	"projectInitials" : "PDP",				  
+	"description": "Phoca Desktop System plugin adds a desktop with shortcuts to the main Joomla! administration panel",
+	"projectUrl": "https://www.phoca.cz/phoca-desktop-system-plugin",
+	"projectDocumentationUrl": "https://www.phoca.cz/documentation/category/141-phoca-desktop-system-plugin",
+	"projectDemo" : {
+		"Demo": "https://www.phoca.cz/"
+	},
+	"projectColor": "#895ED1"
+}

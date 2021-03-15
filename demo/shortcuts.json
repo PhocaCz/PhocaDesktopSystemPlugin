@@ -1,0 +1,134 @@
+{
+   "0":{
+      "title":"PLG_SYSTEM_PHOCADESKTOP_ARTICLES",
+      "link":"index.php?option=com_content&view=articles",
+      "icon":"icon-file-alt"
+   },
+   "1":{
+      "title":"PLG_SYSTEM_PHOCADESKTOP_ADD_ARTICLE",
+      "link":"index.php?option=com_content&task=article.add",
+      "icon":"icon-file-alt",
+      "type":"add"
+   },
+   "2":{
+      "title":"PLG_SYSTEM_PHOCADESKTOP_CATEGORIES",
+      "link":"index.php?option=com_categories&view=categories&extension=com_content",
+      "icon":"icon-folder-open",
+      "type":"",
+      "color": "#EFCA08"
+   },
+   "3":{
+      "title":"PLG_SYSTEM_PHOCADESKTOP_ADD_CATEGORY",
+      "link":"index.php?option=com_categories&task=category.add",
+      "icon":"icon-folder-open",
+      "type":"add",
+      "color": "#EFCA08"
+   },
+   "4":{
+      "title":"PLG_SYSTEM_PHOCADESKTOP_MENU_ITEMS",
+      "link":"index.php?option=com_menus&view=items&menutype=",
+      "icon":"icon-list",
+      "type":"",
+      "color": "#00A6A6"
+   },
+   "5":{
+      "title":"PLG_SYSTEM_PHOCADESKTOP_ADD_MENU_ITEM",
+      "link":"index.php?option=com_menus&task=item.add",
+      "icon":"icon-list",
+      "type":"add",
+      "color": "#00A6A6"
+   },
+   "6":{
+      "title":"PLG_SYSTEM_PHOCADESKTOP_USERS",
+      "link":"index.php?option=com_users&view=users",
+      "icon":"icon-users",
+      "type":"",
+      "color": "#CCFCCB"
+   },
+   "7":{
+      "title":"PLG_SYSTEM_PHOCADESKTOP_ADD_USER",
+      "link":"index.php?option=com_users&task=user.add",
+      "icon":"icon-users",
+      "type":"add",
+      "color": "#CCFCCB"
+   },
+   "8":{
+      "title":"PLG_SYSTEM_PHOCADESKTOP_MODULES",
+      "link":"index.php?option=com_modules&view=modules&client_id=0",
+      "icon":"icon-cube",
+      "type":"",
+      "color": "#C0B9DD"
+   },
+   "9":{
+      "title":"PLG_SYSTEM_PHOCADESKTOP_ADD_MODULE",
+      "link":"index.php?option=com_modules&view=select&client_id=0",
+      "icon":"icon-cube",
+      "type":"add",
+      "color": "#C0B9DD"
+   },
+   "10":{
+      "title":"PLG_SYSTEM_PHOCADESKTOP_PLUGINS",
+      "link":"index.php?option=com_plugins",
+      "icon":"icon-plug",
+      "type":"",
+      "color": "#DED9E2"
+   },
+   "11":{
+      "title":"PLG_SYSTEM_PHOCADESKTOP_MEDIA",
+      "link":"index.php?option=com_media",
+      "icon":"icon-images",
+      "type":"",
+      "color": "#DE6B48"
+   },
+   "12":{
+      "title":"PLG_SYSTEM_PHOCADESKTOP_TEMPLATE_STYLES",
+      "link":"index.php?option=com_templates&view=styles&client_id=0",
+      "icon":"icon-paint-brush",
+      "type":"",
+      "color": "#E5B181"
+   },
+   "13":{
+      "title":"PLG_SYSTEM_PHOCADESKTOP_TEMPLATE_CODE",
+      "link":"index.php?option=com_templates&view=templates&client_id=0",
+      "icon":"icon-code",
+      "type":"",
+      "color": "#F4B9B2"
+   },
+   "14":{
+      "title":"PLG_SYSTEM_PHOCADESKTOP_GLOBAL_CHECKIN",
+      "link":"index.php?option=com_checkin",
+      "icon":"icon-unlock-alt",
+      "type":"",
+      "color": "#0C6291"
+   },
+   "15":{
+      "title":"PLG_SYSTEM_PHOCADESKTOP_GLOBAL_CONFIGURATION",
+      "link":"index.php?option=com_config",
+      "icon":"icon-cog",
+      "type":"",
+      "color": "#80A1D4"
+   },
+   "16":{
+      "title":"PLG_SYSTEM_PHOCADESKTOP_CACHE",
+      "link":"index.php?option=com_cache",
+      "icon":"icon-cloud",
+      "type":"",
+      "color": "#BBDEF0"
+   },
+   "17":{
+      "title":"Phoca Gallery",
+      "link":"index.php?option=com_phocagallery",
+      "icon":"",
+      "iconsvg": "<svg xmlns= \"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\"><path d=\"M0 0h512v512H0z\" fill=\"#fff\"/><path  d=\"M32 32h448v448H32z\" fill=\"#95313e\"/><path d=\"m156.8 69.333h-86.4v373.33h58.667v-140.27h27.733c58.667 0 87.467-32.533 87.467-92.267v-48.533c0-59.733-28.8-92.267-87.467-92.267zm0 53.333c18.667 0 28.8 8.5333 28.8 35.2v56c0 26.667-10.133 35.2-28.8 35.2h-27.733v-126.4z\" fill=\"#fff\"/><path d=\"m359.47 288h26.667v68.8c0 26.667-11.733 36.267-30.4 36.267-18.667 0-30.4-9.6-30.4-36.267v-201.6c0-26.667 11.733-36.8 30.4-36.8 18.667 0 30.4 10.133 30.4 36.8v40h55.467v-36.267c0-59.733-29.867-93.867-87.467-93.867-57.6 0-87.467 34.133-87.467 93.867v194.13c0 59.733 29.867 93.867 87.467 93.867 57.6 0 87.467-34.133 87.467-93.867v-118.4h-82.133z\" fill=\"#fff\"/></svg>",
+      "type":"",
+      "color": ""
+   },
+   "18":{
+      "title":"Phoca Cart",
+      "link":"index.php?option=com_phocacart",
+      "icon":"",
+      "iconsvg": "<svg xmlns= \"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\"><path d=\"M0 0h512v512H0z\" fill=\"#fff\"/><path  d=\"M32 32h448v448H32z\" fill=\"#129ED9\"/><path d=\"M 156.80035,69.333459 H 70.400402 V 442.66656 H 129.06703 V 302.39998 h 27.73332 c 58.66663,0 87.46661,-32.53331 87.46661,-92.26661 v -48.5333 c 0,-59.7333 -28.79998,-92.266611 -87.46661,-92.266611 z m 0,53.333301 c 18.66665,0 28.79998,8.53333 28.79998,35.19998 v 55.99996 c 0,26.66665 -10.13333,35.19998 -28.79998,35.19998 H 129.06703 V 122.66676 Z\" fill=\"#fff\"/><path d=\"m 386.13296,303.46665 v 53.3333 c 0,26.66665 -11.73332,36.26665 -30.39998,36.26665 -18.66665,0 -30.39998,-9.6 -30.39998,-36.26665 V 155.20007 c 0,-26.66665 11.73333,-36.79997 30.39998,-36.79997 18.66666,0 30.39998,10.13332 30.39998,36.79997 v 39.99998 H 441.5996 V 158.9334 c 0,-59.733292 -29.86665,-93.866605 -87.46662,-93.866605 -57.59996,0 -87.46661,34.133313 -87.46661,93.866605 v 194.13322 c 0,59.7333 29.86665,93.86661 87.46661,93.86661 57.59997,0 87.46662,-34.13331 87.46662,-93.86661 v -49.59997 z\" fill=\"#fff\"/></svg>",
+      "type":"",
+      "color": ""
+   }
+}
