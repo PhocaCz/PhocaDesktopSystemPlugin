@@ -103,6 +103,7 @@ class plgSystemPhocaDesktop extends JPlugin
 
 				$buffer = $app->getBody();
 				$bufferNew = str_replace($old, $new, $buffer);
+				$app->setBody($bufferNew);
 
 			}
 		}
@@ -111,7 +112,7 @@ class plgSystemPhocaDesktop extends JPlugin
 
 
 
-		$app->setBody($bufferNew);
+
 
 
 		return true;

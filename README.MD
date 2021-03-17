@@ -52,7 +52,7 @@ Phoca Desktop System plugin adds a desktop with shortcuts to the main Joomla! ad
 
 ## Version
 
-4.0.0
+4.0.1
 
 
 
