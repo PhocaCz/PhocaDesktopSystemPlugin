@@ -55,7 +55,7 @@ class plgSystemPhocaDesktop extends JPlugin
 
 
 		$shortcuts 			= $this->params->get('shortcuts', '');
-		$background_image 	= $this->params->get('background_image', '');
+
 
 		$o = [];
 		$color = '#fff';
@@ -163,9 +163,10 @@ class plgSystemPhocaDesktop extends JPlugin
 		if ($format == 'raw') { return true;}
 		if ($format == 'xml') { return true;}
 
+		$style 				= $this->params->get('style', 'desktop');
 		$background_image 	= $this->params->get('background_image', '');
 
-		if ($background_image != '') {
+		if ($background_image != '' && $style != 'default') {
 
 			$wa = $doc->getWebAssetManager();
 			$wa->addInlineStyle('
@@ -178,7 +179,8 @@ class plgSystemPhocaDesktop extends JPlugin
 			');
 		}
 
-		HTMLHelper::_('stylesheet', 'media/plg_system_phocadesktop/css/desktop.css', array('version' => 'auto'));
+		HTMLHelper::_('stylesheet', 'media/plg_system_phocadesktop/css/'.htmlspecialchars(strip_tags($style)).'.css', array('version' => 'auto'));
+		
 	}
 
 }
