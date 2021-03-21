@@ -37,6 +37,16 @@ class plgSystemPhocaDesktop extends JPlugin
 		$format     = $app->input->get('format', '', 'string');
         $view 		= $app->input->get('view', '');
         $option 	= $app->input->get('option', '');
+        $dashboard 	= $app->input->get('dashboard', '');
+
+        if($option != 'com_cpanel') {
+        	return true;
+		}
+
+        // Only main dashboard
+		if ($dashboard != '') {
+			return true;
+		}
 
 		if ($format == 'feed') { return true;}
 		if ($format == 'pdf') { return true;}
@@ -137,6 +147,16 @@ class plgSystemPhocaDesktop extends JPlugin
 		$format     = $app->input->get('format', '', 'string');
         $view 		= $app->input->get('view', '');
         $option 	= $app->input->get('option', '');
+        $dashboard 	= $app->input->get('dashboard', '');
+
+        if($option != 'com_cpanel') {
+        	return true;
+		}
+
+        // Only main dashboard
+		if ($dashboard != '') {
+			return true;
+		}
 
 		if ($format == 'feed') { return true;}
 		if ($format == 'pdf') { return true;}
