@@ -14,13 +14,13 @@
     background-clip: border-box;
     border: 0 solid transparent;
     border-radius: 0.25rem;
-    
+
     display:flex;
     flex-wrap: wrap;
-    
+
     flex: 1 1 auto;
     padding: 1rem 1rem;
-   
+
 }
 
 #ph-desktop .ph-shortcut-box {
@@ -30,7 +30,7 @@
     justify-content: center;
 
     width: 7em;
- 
+
     margin: 0.75em;
     text-align: center;
     /*background: rgba(0,0,0,0.5);
@@ -38,7 +38,7 @@
     position: relative;
 
     border: 1px solid #b2bfcd;
-    
+
 }
 
 #ph-desktop .ph-shortcut-icon {
@@ -90,7 +90,7 @@ main #system-message-container:not(:empty) {
     /*
     color: linear-gradient(var(--atum-link-color), var(--atum-link-hover-color)) !important;
     */
-    color: transparent !important;
+    color: transparent; /*!important;*/
     background: linear-gradient(var(--atum-link-color), var(--atum-link-hover-color));
     -webkit-background-clip: text;
     background-clip: text;

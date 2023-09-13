@@ -58,16 +58,24 @@ class plgSystemPhocaDesktop extends JPlugin
 
 
 		$o = [];
-		$color = '#fff';
 		if ($shortcuts != '') {
 			$shortcuts = json_decode($shortcuts, true);
 
 			if (!empty($shortcuts)) {
 				foreach ($shortcuts as $k => $v) {
 
+					$color = '#fff';
+					$colorSvg = '';
+
 					$o[] = '<div class="ph-shortcut-box">';
 					if (isset($v['link']) && $v['link'] != ''){
-						$o[] = '<a href="' . Route::_($v['link']) . '">';
+
+						$attribute = '';
+						if (isset($v['linkattribute']) && $v['linkattribute'] != ''){
+							$attribute = strip_tags($v['linkattribute']);
+						}
+
+						$o[] = '<a href="' . Route::_($v['link']) . '" '.$attribute.'>';
 					}
 
 
@@ -84,11 +92,20 @@ class plgSystemPhocaDesktop extends JPlugin
 						$o[] = '<div class="ph-shortcut-icon"><span class="' . $v['icon'] . '" style="color: '.$color.';" ></span></div>';
 					} else if (isset($v['iconsvg']) && $v['iconsvg'] != '') {
 
+						if (isset($v['color']) && $v['color'] != '') {
+							$colorSvg = $v['color'];
+						}
+
 						if (isset($v['type']) && $v['type'] == 'add') {
 							$o[] = '<div class="ph-shortcut-icon-pref"><span class="fas fa-plus-circle"></span></div>';
 						}
 
-						$o[] = '<div class="ph-shortcut-icon-svg">'.$v['iconsvg'].'</div>';
+						$style = '';
+						if ($colorSvg != '') {
+							$style = ' style="color: '.$colorSvg.'; fill: '.$colorSvg.'; stroke: '.$colorSvg.';"';
+						}
+
+						$o[] = '<div class="ph-shortcut-icon-svg"'.$style.'>'.$v['iconsvg'].'</div>';
 					}
 
 					if (isset($v['title']) && $v['title'] != '') {
@@ -180,7 +197,7 @@ class plgSystemPhocaDesktop extends JPlugin
 		}
 
 		HTMLHelper::_('stylesheet', 'media/plg_system_phocadesktop/css/'.htmlspecialchars(strip_tags($style)).'.css', array('version' => 'auto'));
-		
+
 	}
 
 }

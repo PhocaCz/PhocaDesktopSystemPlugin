@@ -1,3 +1,4 @@
+<?xml version="1.0" ?>
 <updates>
 	<update>
 		<name><![CDATA[ Phoca Desktop System Plugin ]]></name>
@@ -5,18 +6,19 @@
 		<element>phocadesktop</element>
 		<folder>system</folder>
 		<type>plugin</type>
-		<version>4.0.3</version>
-		<infourl title="Phoca Desktop System Plugin 4.0.3">https://www.phoca.cz/</infourl>
+		<version>4.0.5</version>
+		<infourl title="Phoca Desktop System Plugin 4.0.5">https://www.phoca.cz/</infourl>
 		<downloads>
-			<downloadurl type="full" format="zip">https://github.com/PhocaCz/PhocaDesktopSystemPlugin/releases/download/4.0.3/plg_system_phocadesktop_v4.0.3.zip</downloadurl>
+			<downloadurl type="full" format="zip">https://github.com/PhocaCz/PhocaDesktopSystemPlugin/releases/download/4.0.5/plg_system_phocadesktop_v4.0.5.zip</downloadurl>
 		</downloads>
+		<sha512>6a1d5c847d97b06297e2e63703a889c9743fa132a5dc2b5138a8ce8c9c24887f0266c18e2bbb4e54723f91283be3cea46db6659fba2a8d6b5dbda2098bdf6979</sha512>
 		<tags>
 			<tag>stable</tag>
 		</tags>
 		<maintainer><![CDATA[ Phoca.cz ]]></maintainer>
 		<maintainerurl>https://www.phoca.cz/</maintainerurl>
 		<section>Updates</section>
-		<targetplatform name="joomla" version="4.0"/>
+		<targetplatform name="joomla" version="4\.*"/>
 		<client>site</client>
 	</update>
 </updates>

@@ -2,12 +2,12 @@
 <extension type="plugin" group="system" method="upgrade" version="4.0">
 	<name>plg_system_phocadesktop</name>
 	<author>Jan Pavelka (www.phoca.cz)</author>
-	<creationDate>21/03/2021</creationDate>
+	<creationDate>13/09/2023</creationDate>
 	<authorEmail></authorEmail>
 	<authorUrl>https://www.phoca.cz</authorUrl>
 	<copyright>Jan Pavelka</copyright>
 	<license>GNU/GPL</license>
-	<version>4.0.3</version>
+	<version>4.0.5</version>
 	<description>PLG_SYSTEM_PHOCADESKTOP_DESCRIPTION</description>
 	<projectName>PhocaDesktopSystemPlugin</projectName>
 
@@ -19,9 +19,9 @@
 
 	<files>
 		<folder>demo</folder>
+		<filename plugin="phocadesktop">phocadesktop.php</filename>
 		<filename plugin="phocadesktop">index.html</filename>
 		<filename plugin="phocadesktop">manifest.xml</filename>
-		<filename plugin="phocadesktop">phocadesktop.php</filename>
 	</files>
 
 	<languages>
