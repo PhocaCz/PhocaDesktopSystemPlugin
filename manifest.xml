@@ -11,7 +11,7 @@
 		<downloads>
 			<downloadurl type="full" format="zip">https://github.com/PhocaCz/PhocaDesktopSystemPlugin/releases/download/4.0.5/plg_system_phocadesktop_v4.0.5.zip</downloadurl>
 		</downloads>
-		<sha512>6a1d5c847d97b06297e2e63703a889c9743fa132a5dc2b5138a8ce8c9c24887f0266c18e2bbb4e54723f91283be3cea46db6659fba2a8d6b5dbda2098bdf6979</sha512>
+		<sha512>73f21a927453e6e6ec9f44ec6e15ae561cdf766224c139cf1a70b8f4632bf0178718e94f04c7570777ed3522a3b1c81d475a20d74910a80fa2ed22ee9b9784ec</sha512>
 		<tags>
 			<tag>stable</tag>
 		</tags>
@@ -19,6 +19,27 @@
 		<maintainerurl>https://www.phoca.cz/</maintainerurl>
 		<section>Updates</section>
 		<targetplatform name="joomla" version="4\.*"/>
+		<client>site</client>
+	</update>
+	<update>
+		<name><![CDATA[ Phoca Desktop System Plugin ]]></name>
+		<description><![CDATA[ Phoca Desktop System plugin adds a desktop with shortcuts to the main Joomla! administration panel ]]></description>
+		<element>phocadesktop</element>
+		<folder>system</folder>
+		<type>plugin</type>
+		<version>5.1.0</version>
+		<infourl title="Phoca Desktop System Plugin 5.1.0">https://www.phoca.cz/</infourl>
+		<downloads>
+			<downloadurl type="full" format="zip">https://github.com/PhocaCz/PhocaDesktopSystemPlugin/releases/download/5.1.0/plg_system_phocadesktop_v5.1.0.zip</downloadurl>
+		</downloads>
+		<sha512>97433afcaceaf1a2f35b2c523af2d9dc99c603e5f0052203c7a324b94b1008a00dd3daad4c0524a8bc0392a9594eea1f4873f54e398ed0a8616cffbb81014e31</sha512>
+		<tags>
+			<tag>stable</tag>
+		</tags>
+		<maintainer><![CDATA[ Phoca.cz ]]></maintainer>
+		<maintainerurl>https://www.phoca.cz/</maintainerurl>
+		<section>Updates</section>
+		<targetplatform name="joomla" version="5\.*"/>
 		<client>site</client>
 	</update>
 </updates>

@@ -10,13 +10,15 @@
 use Joomla\CMS\Factory;
 use Joomla\CMS\HTML\HTMLHelper;
 use Joomla\CMS\Language\Text;
+use Joomla\CMS\Plugin\CMSPlugin;
 use Joomla\CMS\Router\Route;
+use Joomla\CMS\Uri\Uri;
 use Joomla\Uri\UriImmutable;
 
 defined( '_JEXEC' ) or die( 'Restricted access' );
 jimport( 'joomla.plugin.plugin' );
 
-class plgSystemPhocaDesktop extends JPlugin
+class plgSystemPhocaDesktop extends CMSPlugin
 {
 
 	public function __construct(& $subject, $config) {
@@ -158,6 +160,7 @@ class plgSystemPhocaDesktop extends JPlugin
 
 		$app 	= Factory::getApplication();
 		$doc	= $app->getDocument();
+		$wa = $doc->getWebAssetManager();
 
 		if ($app->getName() != 'administrator') { return true;}
 
@@ -185,18 +188,20 @@ class plgSystemPhocaDesktop extends JPlugin
 
 		if ($background_image != '' && $style != 'default') {
 
-			$wa = $doc->getWebAssetManager();
+
 			$wa->addInlineStyle('
 				#ph-desktop {
-					background: url("'.Juri::root().$background_image.'");
+					background-image: url("'.Uri::root().$background_image.'");
 					background-repeat: none;
 					background-size: cover;
+					background-position: center;
 				}
 
 			');
 		}
 
-		HTMLHelper::_('stylesheet', 'media/plg_system_phocadesktop/css/'.htmlspecialchars(strip_tags($style)).'.css', array('version' => 'auto'));
+		//HTMLHelper::_('stylesheet', 'media/plg_system_phocadesktop/css/'.htmlspecialchars(strip_tags($style)).'.css', array('version' => 'auto'));
+		$wa->registerAndUseStyle('plg_system_phocadesktop.main', 'media/plg_system_phocadesktop/css/'.htmlspecialchars(strip_tags($style)).'.css', array('version' => 'auto'));
 
 	}
 
